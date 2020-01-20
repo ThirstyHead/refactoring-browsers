@@ -1,0 +1,26 @@
+      <section class="theme-invert">
+        <h2 aria-hidden="false">Page Analysis - Elements</h2>
+        <figure>
+          <pre><code>
+// get a NodeList of every HTML element in the document
+let allElements = document.querySelectorAll('*');
+
+// convert the NodeList to an Array using Spread Operator
+let elementsArray = [...allElements];
+ 
+// create a Set to get a unique list of HTML elements 
+// using Array.map
+let uniqueElements = 
+    new Set(elementsArray.map(element =&gt; element.nodeName));
+
+// https://caniuse.com/#feat=mdn-html_elements_p   
+// https://caniuse.com/#feat=mdn-html_elements_h1  
+          </code></pre>
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
